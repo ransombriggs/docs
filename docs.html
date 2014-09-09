@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
 
-        <title>reveal.js - The HTML Presentation Framework</title>
+        <title>Workflow Components Overview</title>
 
         <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
         <meta name="author" content="Hakim El Hattab">
@@ -52,12 +52,48 @@
                 <section>
                     <h2>Components</h2>
                     <ol>
-                        <li>OAuth2 Authorization &amp; SSO</li>
                         <li>Workflow Configuration</li>
+                        <li>OAuth2 Authorization &amp; SSO</li>
                         <li>Integrations</li>
                         <li>Workflow Widget</li>
                         <li>Routing Redirects and Callbacks</li>
                     </ol>
+                </section>
+
+                <section>
+                    <h2>Workflow Configuration</h2>
+                    <img src="images/fieldtypes.png"/>
+                </section>
+
+                <section>
+                    <h2>Field Integrations</h2>
+                    <img src="images/fields.png"/>
+                </section>
+
+                <section>
+                    <h2>Inbox Field Selection</h2>
+                    <img src="images/inboxfields.png"/>
+                </section>
+
+                <section>
+                    <h2>Inbox Summary Fields</h2>
+                    <img src="images/inbox.png"/>
+                    <img src="images/inboxvisible.png"/>
+                </section>
+
+                <section>
+                    <h2>Stop</h2>
+                    <img src="images/stops.png"/>
+                </section>
+
+                <section>
+                    <h2>Destination</h2>
+                    <img src="images/destination.png"/>
+                </section>
+
+                <section>
+                    <h2>Test Deployment</h2>
+                    <img src="images/test.png"/>
                 </section>
 
                 <section>
@@ -70,32 +106,51 @@
                 </section>
 
                 <section>
-                    <h2>Workflow Configuration</h2>
-                    <img src="images/fieldtypes.png"/>
-                </section>
-
-                <section>
-                    <h2>Integrations</h2>
+                    <h2>Developer Integrations</h2>
                     <ol>
-                        <li>Create new package</li>
-                        <li>Edit package data</li>
+                        <li>Create a package with data</li>
+                        <li>Update package data</li>
                     </ol>
+                    <img src="images/create.png"/>
                 </section>
 
                 <section>
                     <h2>Workflow Widget</h2>
                     <ol>
-                        <li>Approval &amp; Void</li>
-                        <li>Routing History</li>
-                        <li>Comments</li>
+                        <li>Similar to Facebook Graph Api</li>
+                        <li>Embed via Javascript snippet</li>
+                        <li>Lives in iframe inserted into page</li>
+                        <li>Authenticated via SSO</li>
                     </ol>
                 </section>
 
                 <section>
-                    <h2>Routing Redirects and Callbacks</h2>
+                    <h2>Workflow Widget - Approval &amp; Void</h2>
+                    <img src="images/approvevoid.png"/>
+                </section>
+
+                <section>
+                    <h2>Routing Redirect</h2>
                     <ol>
-                        <li>Get status of package</li>
-                        <li>Get status of signature</li>
+                        <li>Approver Signature URL</li>
+                        <li>From Inbox
+                            <br/>
+                            formId=2&amp;packageId=10001295&amp;signatureId=2051&amp;rights=SIGNATURE
+                        </li>
+                        <li>From History
+                            <br/>
+                            formId=2&amp;packageId=10000211&amp;rights=HISTORY
+                        </li>
+                        <li>Should verify using API that the person has access</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h2>Routing Callbacks</h2>
+                    <ol>
+                        <li>Sent with OAuth header</li>
+                        <li>Package Routing Complete Callback URL</li>
+                        <li>Package Voided Callback URL</li>
                     </ol>
                 </section>
 
