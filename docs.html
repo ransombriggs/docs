@@ -133,11 +133,20 @@
                     <h2>Routing Redirect</h2>
                     <ul>
                         <li>Approver Signature URL</li>
-                        <li>Redirects from Inbox<br/>
-                            &nbsp;&nbsp;<code>formId=2&amp;packageId=10001295&amp;signatureId=2051&amp;rights=SIGNATURE</code>
+                        <li>Redirects from Inbox
+                            <ul>
+                                <li>formId=2</li>
+                                <li>packageId=10001295</li>
+                                <li>signatureId=2051</li>
+                                <li>rights=SIGNATURE</li>
+                            </ul>
                         </li>
                         <li>Redirects From History<br/>
-                            &nbsp;&nbsp;<code>formId=2&amp;packageId=10000211&amp;rights=HISTORY</code>
+                            <ul>
+                                <li>formId=2</li>
+                                <li>packageId=10000211</li>
+                                <li>rights=HISTORY</li>
+                            </ul>
                         </li>
                         <li>Should verify using API that the person has access</li>
                     </ul>
@@ -146,7 +155,7 @@
                 <section>
                     <h2>Routing Callbacks</h2>
                     <ul>
-                        <li>Sent with OAuth header</li>
+                        <li>Sent with OAuth Authorization header</li>
                         <li>Package Routing Complete Callback URL</li>
                         <li>Package Voided Callback URL</li>
                     </ul>
